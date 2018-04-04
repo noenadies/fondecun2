@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the array values after the split.</p>
+
+<button onclick="myFunction()">Try it</button>
+<input type="text" id="myText" value="Some text...">
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var str = "Departamento:BOGOTA D.C.Municipio:BOGOTA. D.C.Código localidad:08Nombre localidad:KENNEDYPuesto:LAS AMERICASDirección del puesto:KR 71 C NO 3 A-41Fecha de ingreso:Octubre 27 de 2017Mesa:39";
+    var res = str.replace(".", " ").replace(".", " ").replace(".", " ").replace(".", " ").replace(".", " ").replace(".", " ").replace(".", " ").replace(".", " ").replace(".", " ").replace(".", " ").replace(".", " ").replace(".", " ").replace(".", " ").replace(":", " ").replace(":", " ").replace(":", " ").replace(":", " ").replace(":", " ").replace(":", " ").replace(":", " ").replace(":", " ").replace(":", " ").replace("Mesa", " Mesa");
+    
+   
+    var indice=0;
+   var res = res.split(" ");
+   
+  // document.getElementById("demo").innerHTML =res;
+   for(var x=0 ;x<=res.length;x=x+1 ){
+   if(res[x]=="Mesa"){
+   x=x+1;
+   document.getElementById("demo").innerHTML +=res[x];
+   // document.getElementById("demo").innerHTML =res.length;;
+    }
+    }
+}
+</script>
+
+</body>
+</html>
