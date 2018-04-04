@@ -222,6 +222,8 @@ var mensajeuno=document.getElementById("idmesauno").value;
 
 firebase.database().ref().child("carrouno").child("carrohabla").set(String(mensajeuno));
 //alert(String(mensageuno));
+
+firebase.database().ref().child("rtvmnsuno").set(String(mensajedoso));
        console.log("mi boton");}
 
 
@@ -233,7 +235,7 @@ function mesados(){
 var mensajedoso=document.getElementById("idmesados").value;
 //firebase.database().ref().child("dos").set(String(mensajedoso));
 firebase.database().ref().child("rhablaandroid").set(String(mensajedoso));
-firebase.database().ref().child("rtvmnsuno").set(String(mensajedoso));
+firebase.database().ref().child("rtvmnsdos").set(String(mensajedoso));
 //alert(String(mensageuno));
        console.log(mensajedoso);}
 
@@ -250,7 +252,10 @@ firebase.database().ref().child("rtvmnsuno").set(String(mensajedoso));
    console.log(k, mi[k].age);
 }
   });
-  
+
+
+
+
 
 
 
